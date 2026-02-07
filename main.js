@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
     /* =========================
        LOAD PRODUCTS
     ========================= */
-    fetch("./Products.json")
+    fetch(".Products.json")
         .then(res => {
             if (!res.ok) throw new Error("Products.json not found");
             return res.json();
